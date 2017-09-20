@@ -18,7 +18,7 @@ jasmine.getEnv().it = jfr(jasmine.getEnv().it, '.spec.js');
 
 When creating a custom report you can use the new information to print out the filename and linenumber
 
-```
+```javascript
     specDone: (result) => {
         let fn = result['_specFile'].filename;
         let ln = result['_specFile'].line;
